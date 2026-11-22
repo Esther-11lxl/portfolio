@@ -20,8 +20,8 @@ const SITE = {
   /* ---------- Home 首页 ---------- */
   home: {
     greeting: "你好，我是李新玲",
-    // 一句话个人定位（可修改）
-    tagline: "懂海外社媒 ｜ 会抓爆款 ｜ 用数据说话 ｜ AI 提效小能手 ｜ 靠谱的项目统筹 ｜ 短视频产出 100+",
+    // 一句话个人定位（留空则不显示）
+    tagline: "",
     subline: "广告学 2027 届 | 湖南工商大学 | GPA 专业前 5%",
     // 核心数据展示（数字 + 说明，可增删）
     stats: [
@@ -75,15 +75,14 @@ const SITE = {
         "多平台月均涨粉 300+，周均总播放 5 万+",
         "YouTube 单周最高观看 18,060 次，单条最高浏览 1.2 万",
         "每周输出数据复盘报告，处理侵权投诉、移除 13 条抄袭搬运视频",
-        "策划粉丝专属活动，联动设计与运营团队落地活动物料",
       ],
       images: [
         { src: "assets/p1-cover-sail.png", caption: "品牌周年宣传片封面《五十耕耘 · 麓山领航》" },
         { src: "assets/p1-covers-grid.png", caption: "工业科普系列短视频封面（抖音）" },
         { src: "assets/p1-factory.png", caption: "品牌工厂实拍剪辑片段" },
+        { src: "assets/p1-data-analysis.png", caption: "多平台数据分析与周度复盘" },
         { src: "assets/p1-youtube-analytics.png", caption: "YouTube 后台周度数据分析" },
         { src: "assets/p1-review-notes.png", caption: "每周数据复盘 · 总结与调整笔记" },
-        { src: "", caption: "账号截图 / 更多封面（待补充）" },
       ],
     },
     {
@@ -100,11 +99,8 @@ const SITE = {
         "联动编导、后期、设计等团队推进内容营销落地",
       ],
       images: [
-        { src: "assets/p2-koubo.png", caption: "短视频封面设计（服装口播类）" },
-        { src: "assets/p2-fanedit.png", caption: "爱豆安利 / 二创剪辑" },
-        { src: "", caption: "综艺节目封面设计图（待补充）" },
-        { src: "", caption: "爆款文案截图（待补充）" },
-        { src: "", caption: "二创标签库截图（待补充）" },
+        { src: "assets/p2-title-list.png", caption: "综艺标题撰写 · 多档 S+ 级节目标题库" },
+        { src: "assets/p2-data-chart.png", caption: "综艺节目数据分析 · 先导片表现指数" },
       ],
     },
     {
@@ -121,9 +117,7 @@ const SITE = {
       ],
       images: [
         { src: "assets/p3-research.png", caption: "用户调研数据图表（节选）" },
-        { src: "", caption: "项目申报书 PPT 精美页（待补充）" },
-        { src: "", caption: "项目逻辑图（待补充）" },
-        { src: "", caption: "商业模式画布（待补充）" },
+        { src: "assets/p3-logic.png", caption: "项目五阶段推进逻辑图" },
       ],
     },
     {
@@ -139,10 +133,10 @@ const SITE = {
         "团队获校级一等奖",
       ],
       images: [
+        { src: "assets/p4-video-card.jpg", caption: "纪实宣传类短视频 · 扫码观看" },
         { src: "assets/p4-legal-video.png", caption: "《法治之光，点亮乡村》普法视频封面" },
         { src: "assets/p4-photos.png", caption: "实地拍摄作品精选" },
-        { src: "", caption: "视频链接卡片（待补充：可发我视频链接或二维码）" },
-        { src: "", caption: "九宫格照片（待补充）" },
+        { src: "assets/p4-judge.png", caption: "组织「小小法官」普法体验活动" },
       ],
     },
     {
@@ -158,9 +152,12 @@ const SITE = {
         "爱豆安利向二创剪辑",
       ],
       images: [
-        { src: "", caption: "科普视频封面（待补充）" },
-        { src: "", caption: "口播剪辑封面（待补充）" },
-        { src: "", caption: "安利剪辑封面（待补充）" },
+        { src: "assets/p1-covers-grid.png", caption: "科普视频剪辑封面（麓山电子 · 工业科普系列）" },
+        { src: "assets/p2-koubo.png", caption: "口播视频剪辑封面（服装口播类）" },
+        { src: "assets/p2-fanedit.png", caption: "爱豆安利向二创剪辑" },
+        { src: "", caption: "科普视频 · 在线观看链接（待补充）" },
+        { src: "", caption: "口播视频 · 在线观看链接（待补充）" },
+        { src: "", caption: "安利剪辑 · 在线观看链接（待补充）" },
       ],
     },
   ],
@@ -194,7 +191,7 @@ const SITE = {
   /* ---------- Contact 联系方式 ---------- */
   contact: {
     title: "期待与你一起做出好内容",
-    desc: "如果你有运营、内容或剪辑相关的机会，欢迎随时联系我！",
+    desc: "我希望加入贵公司，把内容创意、数据洞察与 AI 提效方法带到团队中，和大家一起做出打动用户的好内容。期待有机会与您进一步沟通！",
     items: [
       { icon: "📱", label: "手机 / 微信", value: "15700392860" },
       { icon: "✉️", label: "邮箱", value: "15700392860@163.com" },
