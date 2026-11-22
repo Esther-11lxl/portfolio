@@ -70,7 +70,9 @@ function renderProjects() {
         <ul class="hl-list">${p.highlights.map((h) => `<li>${esc(h)}</li>`).join("")}</ul>
         <div class="img-grid">
           ${p.images.map((img) => img.src
-            ? `<div class="img-item"><img src="${img.src}" alt="${esc(img.caption)}" loading="lazy"><div class="img-caption">${esc(img.caption)}</div></div>`
+            ? `<div class="img-item">${img.link ? `<a href="${esc(img.link)}" target="_blank" rel="noopener" title="点击在线观看">` : ""}<img src="${img.src}" alt="${esc(img.caption)}" loading="lazy">${img.link ? "</a>" : ""}<div class="img-caption">${esc(img.caption)}${img.link ? ` · <a href="${esc(img.link)}" target="_blank" rel="noopener" class="img-link">▶ 在线观看</a>` : ""}</div></div>`
+            : img.link
+            ? `<div class="img-item"><a class="link-card" href="${esc(img.link)}" target="_blank" rel="noopener"><span class="link-icon">▶</span><span class="link-text">${esc(img.caption)}</span><span class="link-hint">点击打开观看</span></a></div>`
             : `<div class="img-item"><div class="placeholder">📷 ${esc(img.caption)}</div><div class="img-caption">${esc(img.caption)}</div></div>`
           ).join("")}
         </div>
